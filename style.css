@@ -1,0 +1,132 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div :hover {
+    background-color:#faf7fa;
+}
+
+.container nav a {
+    color: black;
+    font-size: larger;
+}
+
+header, section, nav {
+    border-bottom: 1px solid #CCC;
+    padding: 10px 50px;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(179, 179, 180);
+}
+
+section {
+    min-height: 50vh;
+    background-color: rgb(221, 123, 43)}
+
+section h1 {
+    text-align: center;
+    padding: 5x;
+}
+
+table {
+    width: 100%;
+}
+
+#sobre {
+    background-color:rgb(247, 216, 82) ;
+}
+
+#produtos {
+    background-color:  rgb(179, 179, 180);
+}
+
+#endereco {
+    background-color:  rgb(221, 123, 43);
+}
+
+p {
+    text-align: center;
+}
+
+address p:nth-of-type(1)::before {
+    content:"Rua: ";
+   
+}
+
+address p:nth-of-type(2)::before {
+    content:" Bairro: ";
+   
+}
+
+address p:nth-of-type(3)::after {
+    content:" - Santa Catarina";
+}
+
+tr:not(:nth-child(1)) td:nth-child(even)::before {
+    content: "R$ ";
+}
+
+tr:first-child {
+    background-color:rgb(221, 123, 43);
+}
+
+tr {
+    background-color: rgb(247, 216, 82) ;
+}
+
+tr:nth-child(4) {
+    display: none;
+}
+
+section:nth-child(2) {
+    background-color: rgb(85, 107, 67);
+}
+
+section:nth-child(3) {
+    background-color:rgb(203, 236, 176);
+}
+
+tr:hover {
+   background-color:rgb(203, 236, 176);
+}
+
+
+
+
+
+
+/*
+* 
+Para esta atividade, você não deve alterar absolutamente nada o arquivo HTML.
+
+1 - formate os links como achar mais apropriado em seus estados (link, visited, hover, active)
+2 - os links devem estar lado a lado (display:inline ou inline-block) - ok
+3 - a pizza do cheff está em falta, esconda esta linha da tabela (display:none) - ok
+5 - a primeira linha da tabela (cabeçalho) deve ser com uma cor destaque  - ok
+
+
+6 - cada seção deve ter uma cor de fundod diferente - ok
+7 - Títulos devem possui cores diferentes em cada seção. No entanto, os parágrafos das seções devem ser de cores iguais.-ok
+8 - adicione "R$" nos preços das pizzas - ok
+9 - links externos devem possuir uma cor ligeiramente diferente (começa com http) - ok
+10 - adicione "Rua" antes do nome da rua "Maria Aparecida Barbosa" - ok
+
+
+11 - adicione "bairro antes de "Campo Duna" - ok
+12 - adicione "Santa Catarina" após o nome da cidade (Garopaba) - ok
+13 - ao passar o cursor sobre cada linha da tabela, ela deve ser "iluminada" com outra cor (menos o cabeçalho). 
+	 Dica: combinação de pseudo classes - ok
+14 - o texto do endereço deve ser centralizado - ok
+15 - Desenvolva 3 exemplos de uso de pseudo-classes que não foram demonstradas pelo professor
+
+
+16 - Desenvolva 2 exemplos de pseudo-elementos que não foram demonstradas pelo professor
+*/
